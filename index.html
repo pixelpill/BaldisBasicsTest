@@ -1,9 +1,131 @@
+Skip to content
+Navigation Menu
+pixelpill
+BaldisBasicsTest
 
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Files
+Go to file
+t
+clbaldisbasics.html
+index.html
+BaldisBasicsTest
+/
+clbaldisbasics.html
+in
+main
 
-<Module>
+Edit
 
+Preview
+Indent mode
 
-<!-- Ultimate Game Stash file--> 
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+No wrap
+Editing clbaldisbasics.html file contents
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
 <!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
 
 
@@ -39,8 +161,7 @@
 clbaldisbasics.html
 
 Displaying clbaldisbasics.html.
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -65,11 +186,15 @@ Displaying clbaldisbasics.html.
 
 <script>
   const canvas = document.getElementById('gameCanvas');
+  let clickCount = 0;
 
-  // Lock mouse on first click anywhere
   document.addEventListener('click', () => {
-    canvas.requestPointerLock();
-  }, { once: true }); // only run once
+    clickCount++;
+
+    if (clickCount === 2) {
+      canvas.requestPointerLock();
+    }
+  });
 
   document.addEventListener('pointerlockchange', () => {
     if (document.pointerLockElement === canvas) {
@@ -85,11 +210,11 @@ Displaying clbaldisbasics.html.
     const dx = e.movementX;
     const dy = e.movementY;
     // Use dx/dy for camera rotation
-    // Example: console.log(`Move: ${dx}, ${dy}`);
   }
 </script>
 
 </body>
 </html>
 
-  
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+Editing BaldisBasicsTest/clbaldisbasics.html at main · pixelpill/BaldisBasicsTest 
