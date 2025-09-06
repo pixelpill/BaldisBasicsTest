@@ -68,7 +68,7 @@ Displaying clbaldisbasics.html.
   document.addEventListener('click', () => {
     clickCount++;
 
-    if (clickCount === 2) {
+    if (clickCount === 3) {
       canvas.requestPointerLock();
     }
   });
@@ -87,11 +87,13 @@ Displaying clbaldisbasics.html.
     const dx = e.movementX;
     const dy = e.movementY;
     // Use dx/dy for camera rotation
+    // Example: console.log(`Move: ${dx}, ${dy}`);
   }
 </script>
 
 </body>
 </html>
+
 
 
    
