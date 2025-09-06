@@ -38,8 +38,7 @@
 clbaldisbasics.html
 
 Displaying clbaldisbasics.html.
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -64,11 +63,15 @@ Displaying clbaldisbasics.html.
 
 <script>
   const canvas = document.getElementById('gameCanvas');
+  let clickCount = 0;
 
-  // Lock mouse on first click anywhere
   document.addEventListener('click', () => {
-    canvas.requestPointerLock();
-  }, { once: true }); // only run once
+    clickCount++;
+
+    if (clickCount === 2) {
+      canvas.requestPointerLock();
+    }
+  });
 
   document.addEventListener('pointerlockchange', () => {
     if (document.pointerLockElement === canvas) {
@@ -84,11 +87,11 @@ Displaying clbaldisbasics.html.
     const dx = e.movementX;
     const dy = e.movementY;
     // Use dx/dy for camera rotation
-    // Example: console.log(`Move: ${dx}, ${dy}`);
   }
 </script>
 
 </body>
 </html>
+
 
   
