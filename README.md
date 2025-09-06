@@ -14,4 +14,4 @@ Instead, make a new github repository, make a new file in it called "Index.html"
 
 
 
-If you see any bugs or glitches go to the the "issues" tab and make an issue. i will check the issues and read your reports , when fixed i will close the issue
+If you see any bugs or glitches go to the "issues" tab and make an issue. i will check the issues and read your reports , when fixed i will close the issue
